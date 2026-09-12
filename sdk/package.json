@@ -1,0 +1,24 @@
+{
+  "name": "@royalty-router/sdk",
+  "version": "0.1.0",
+  "description": "Launch mint.club tokens with a GlueHook pool and a trustless royalty router — browser, Node, and CLI.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "bin": { "rr": "./bin/rr.js" },
+  "files": ["dist", "bin", "README.md"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "abi": "node scripts/abi.mjs"
+  },
+  "peerDependencies": { "viem": "^2.0.0" },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "viem": "^2.21.0",
+    "vitest": "^2.1.0"
+  },
+  "license": "MIT"
+}

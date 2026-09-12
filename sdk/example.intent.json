@@ -1,0 +1,15 @@
+{
+  "name": "Royalty Router Demo",
+  "symbol": "RRDEMO-7f3a",
+  "reserveToken": "0x4200000000000000000000000000000000000006",
+  "mintRoyaltyBps": 300,
+  "burnRoyaltyBps": 300,
+  "steps": [
+    { "rangeTo": "1000000000000000000000", "price": "0" },
+    { "rangeTo": "100000000000000000000000", "price": "100000000000000" },
+    { "rangeTo": "1000000000000000000000000", "price": "1000000000000000" }
+  ],
+  "curveMint": "5000000000000000000000",
+  "seed": { "tokens": "4000000000000000000000", "secondary": "400000000000000000" },
+  "feeRecipient": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+}

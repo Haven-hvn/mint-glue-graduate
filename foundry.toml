@@ -1,0 +1,19 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+test = "test"
+solc = "0.8.28"
+evm_version = "cancun"
+optimizer = true
+optimizer_runs = 1000
+via_ir = true
+# Fork tests hit Base mainnet; excluded by default. Run them with `FOUNDRY_PROFILE=fork forge test`.
+no_match_path = "test/fork/*"
+
+[profile.fork]
+no_match_path = "nothing/matches/this"
+match_path = "test/fork/*"
+
+[fuzz]
+runs = 256
