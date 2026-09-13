@@ -10,3 +10,5 @@ model/cadcad_venue.csv
 model/cadcad_mix.csv
 model/cadcad_routing.csv
 model/cadcad_royalty_routing.csv
+
+lib/
